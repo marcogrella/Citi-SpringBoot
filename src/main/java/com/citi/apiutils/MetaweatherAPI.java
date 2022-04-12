@@ -75,7 +75,7 @@ public class MetaweatherAPI {
 					JSONObject wObj =  (JSONObject) parse.parse(obj.get(0).toString());
 					
 					city.setCityName(cityObject.get("title").toString());
-					city.setCelsiusTemp(wObj.get("the_temp").toString().substring(0, 5));
+					city.setCelsiusTemp(wObj.get("the_temp").toString().substring(0, 4));
 					city.setFarenheitsTemp(String.valueOf(celsiusToFahrenheit(wObj.get("the_temp").toString().substring(0, 4))));
 					
 								

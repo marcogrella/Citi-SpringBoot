@@ -26,8 +26,7 @@ import io.swagger.annotations.ApiResponses;
 public class CitiController {
 	
 	private final MetaweatherAPI queryAPI = new MetaweatherAPI();
-	
-	
+
 	@ApiOperation(value = "Returns a city and respective temperature in Celsius and Fareinht")
     @ApiResponses(value = {
             @ApiResponse(code = 200, message = "When successfull. Returns a city with respective temperature in Celsius and Fahrenheit degrees."),
